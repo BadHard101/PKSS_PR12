@@ -22,7 +22,7 @@ mindmap
       Проверка наличия комплектующих
       Обработка заказов
       Статус выполнения 
-        (Создан, Собирается, Тестируется, Готов, В доставке, Выполнен, Отме-нен)
+        (Создан, Собирается, Тестируется, Готов, В доставке, Выполнен, Отменен)
     Комплектующие
       Каталог комплектующих
       Управление наличием
@@ -185,15 +185,6 @@ gitGraph
     commit id: "v0.8.0: Релиз улучшений безопасности"
 
     commit id: "v1.0.0: Первый стабильный релиз"
-class NotificationService {
-    + notifyUser(userId: int, message: String): void
-}
-
-OrderProcessor --> OrderRepository : "Использует"
-OrderProcessor --> ComponentChecker : "Взаимодействует с"
-OrderProcessor --> NotificationService : "Уведомляет через"
-OrderProcessor --> OrderService : "Вызывает методы"
-
 @enduml
 ```
 
